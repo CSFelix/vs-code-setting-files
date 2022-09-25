@@ -1,0 +1,142 @@
+\ Creating Application
+
+yarn init -y
+
+-*-*-*-*-
+
+\ Express
+
+	yarn add express
+
+\ Nodemon
+
+	yarn add nodemon -D
+
+	- in packages.json, add:
+
+	"scripts": {
+    	"dev": "nodemon src/index.js"
+  	},
+
+  	- to run, tip on terminal:
+
+  	yarn dev
+
+\ Sucrase: adds the new JS syntax in nodejs
+
+	- yarn add sucrase -D
+
+	\ create nodemon.json file
+
+
+- ESLint (plugin and package) and Prettier
+
+	\ yarn add eslint -D (checks out if the code are following the pattern)
+	
+	\ yarn eslint --init (creates the eslint file)
+
+	\ yarn eslint --fix src --ext .js (applies the rules to all files)
+
+	-*-*-*-*-
+
+	\ yarn add prettier eslint-config-prettier eslint-plugin-prettier -D
+
+- Editor Config (plugins >> for dedvelopers that use different IDEs)
+
+- Sequelize (manages database operations):
+
+	\ yarn add sequelize
+	\ yarn add sequelize-cli -D
+
+	\ yarn add pg pg-hstore (enablees to use postgres with sequelize)
+
+	-*-*-*-*-
+
+	\ yarn sequelize migration:create --name=create-users (creates a migration called 'create-users')
+	\ yarn sequelize db:migrate (executes migrations)
+	\ yarn sequelize db:migrate:undo (undoes the last migration)
+	\ yarn sequelize db:migrate:undo:all (undoes all migrations)
+
+- Multer: file upload (uses the Multpart Body's Format)
+
+	\ yarn add multer
+
+- Date-FNS: deals with date time
+
+	\ yarn add date-fns@next
+
+- Mongo-DB: connects to mongo db (uses schemas)
+
+	\ yarn add mongoose
+
+- NodeMailer: deals with emails sending
+
+	\ yarn add nodemailer
+
+	{
+		Amazon SES: 'production environment'
+		Mailtrap: 'development environment'
+	}
+
+- Express Handlebars and Nodemailer Express HandleBars(Template Engines): html email format that can receive JavaScript variables
+
+	\ yarn add express-handlebars nodemailer-express-handlebars
+
+- BeeQueue: manages background jobs like sending emails!!
+
+	\ yarn add bee-queue
+
+- Sentry: tool to manages exceptions when the app is on production
+
+- Dotenv: configures environment variables
+
+	\ yarn add dotenv
+
+-*-*-*-*-*-
+
+\ Docker: creates containers to isolate the databases from the whole application and device (server)
+
+	\ image >> services in docker
+	\ container >> image's instance
+	\ docker registry (docker hub) >> docker's server (where all the images are stored)
+	\ dockerfile >> you can create your own images
+
+
+	docker run --name database -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres:11
+	
+	docker run --name mongobarber -p 27017:27017 -d -t mongo
+
+	docker run --name redisbarber -p 6379:6379 -d -t redis:alpine
+
+	docker ps // lists all containers that are running
+	docker ps -a // lists all containers that are or not running
+
+	docker stop database (stops a container)
+
+	docker start database (starts a container)
+
+	docker logs database (shows logs '-')
+
+\ PostBird: it's the database IDE
+
+\ Sequelize: ORM to SQL Databases
+
+	- tables >> models
+	
+	- migrations >> version controllers (NEVER edit a migration after it has been passed to another developers and clients. To make updates, you gotta create a new migration with just the updates!!)
+
+	- seeds >> fake datas to simulate the database to the tests (just used in TEST Environment. If you have datas that must be inserted in Dev Env, use a migration)
+
+- MVC Structure:
+
+	\ Model >> tables
+	\ View >> json and HTML pages
+	\ Controller (index, show, store, update, dele) >> functions
+
+- Git:
+
+	https://github.com/CSFelix/repo-lister.git
+
+	git config --global user.name 'CSFelix'
+	
+	git config --global user.email 'csfelix08@gmail.com'

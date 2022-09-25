@@ -1,0 +1,56 @@
+	***************
+	** Softwares **
+	***************
+
+- Dev Docs: downloads the languages' documentations and allows you to read them offline
+
+- Visual Studio Code: IDE
+
+- Insomnia: realizes HTTP Methods tests
+
+- Git: integrated Visual Studio Code with your Git Hub Repo
+
+- Chocolatey
+
+	cinst nodejs
+	cinst yarn
+
+- ExpressJS
+
+-*-*-*-*-*-
+
+	************************
+	** Browser Extentions **
+	************************
+
+- JSON Viewer: permits you see JSON files in a better formatted way
+
+- React Dev Tools: shows you the React Containers when a web site has been built using React
+
+-*-*-*-*-
+
+	***********************************
+	** Visual Studio Code Extentions **
+	***********************************
+
+- Material Icons: icons for each file extention
+
+- Dracula Theme: dark mode is life!!
+
+- Color Highlight: shows you the collors applied in CSS
+
+- RocketSeat React: ??
+
+- RocketSeat React-Native: ??
+
+-*-*-*-*-
+
+	***************
+	** Languages **
+	***************
+
+- Node JS: back-end
+
+- React: front-end
+
+- React-Native: mobile front-end
