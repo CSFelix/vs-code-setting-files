@@ -1,0 +1,35 @@
+- Creating a New Project:
+
+	\ npx react-native init MyProjectName (before starting Android Emulator on Genymotion)
+
+	\ react-native run-android (after starting Android Emulator)
+
+	\ react-native start (starts application and bundle)
+
+	\ react-native start --reset-cache (when you need to start application and bundle with a new cache)
+
+-*-*-*-*-
+
+- ESLint, Prettier and EditorConfig: code patterns
+
+	\ yarn add eslint -D
+
+	\ yarn eslint --init
+
+	\ yarn add prettier eslint-config-prettier eslint-plugin-prettier babel-eslint -D
+
+- React Navigation: manages routes (https://reactnavigation.org/docs/getting-started/)
+
+	\ yarn add react-navigation
+
+	\ yarn add react-native-screens react-native-safe-area-context
+
+	\ yarn add react-navigation-stack
+
+-*-*-*-*-
+
+- Genymotion: Android Emulator. There are some issues using Genymotion and Docker together on Windows, so take care!!
+
+- Reactotron: debugger for React-Native Mobile Projects. It's a software that you download and a package that you add with yarn.
+
+	\ yarn add reactotron-react-native -D

@@ -135,7 +135,7 @@ yarn init -y
 
 - Git:
 
-	https://github.com/CSFelix/repo-lister.git
+	https://github.com/CSFelix/react-native-guide.git
 
 	git config --global user.name 'CSFelix'
 	
