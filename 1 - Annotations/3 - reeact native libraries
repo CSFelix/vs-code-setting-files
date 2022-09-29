@@ -26,6 +26,30 @@
 
 	\ yarn add react-navigation-stack
 
+- Styled Components: appliees css styles on Components
+
+	\ yarn add styled-components
+
+- React-Native Vector Icons: svg icons!
+
+	\ yarn add react-native-vector-icons
+
+- React-Native Gesture Handler: provides some build Components, like buttons, regardless whether the device is Android, iOS...
+
+	\ yarn add react-native-gesture-handler
+
+- Axios: calls apis
+
+	\ yarn add axios
+
+- Async Storage: it's like localStorage, but for mobile
+
+	\ yarn add @react-native-community/async-storage
+
+- Prop Types: Types and Validations for Properties
+
+	\ yarn add prop-types
+
 -*-*-*-*-
 
 - Genymotion: Android Emulator. There are some issues using Genymotion and Docker together on Windows, so take care!!

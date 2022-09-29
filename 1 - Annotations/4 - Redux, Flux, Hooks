@@ -1,0 +1,69 @@
+- Git:
+
+	https://github.com/CSFelix/kick-shoes.git
+
+	git config --global user.name 'CSFelix'
+	
+	git config --global user.email 'csfelix08@gmail.com'
+
+-*-*-*-*-
+
+- Creating a new react project with a bunch of libraries already installed and set
+
+	\ yarn create react-app frontend
+
+-*-*-*-*-
+
+- Babel: used to convert JS not supported syntax into browser supported syntax
+
+	\ yarn add @babel/core @babel/preset-env @babel/preset-react  babel-loader @babel/plugin-proposal-class-properties -D
+
+- Webpack: used to update the page without having to restart the server and to reload the page
+
+	\ yarn add webpack webpack-cli webpack-dev-server -D
+
+- React:
+	
+	\ yarn add react react-dom
+
+- Loaders: manages Files extensions
+
+	\ yarn add style-loader css-loader file-loader -D
+
+-*-*-*-*-
+
+- ESLint: code structure
+
+	\ yarn add eslint -D
+
+	\ yarn eslint --init
+	{
+		- To check syntax, find problems, and enforce code style,
+		- JavaScript modules (import/export),
+		- React,
+		- Browser,
+		- Use a Popular Style Guide,
+		- Airbnb,
+		- JavaScript,
+		- Yarn
+	}
+
+- Prettier: code structure
+
+	\ yarn add prettier eslint-config-prettier eslint-plugin-prettier babel-eslint -D
+
+- React-Router-Dom: manages the routes
+
+	\ yarn add react-router-dom
+
+- Styled Components: used to style components '-'
+
+	\ yarn add styled-components
+
+- Reat Icons: icons!!
+
+	\ yarn add react-icons
+
+- Polished: manages colors
+
+	\ yarn add polished
